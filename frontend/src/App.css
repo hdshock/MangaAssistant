@@ -1,0 +1,36 @@
+.series-page {
+  padding: 20px;
+}
+
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.series-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.series-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.series-detail {
+  padding: 20px;
+}
+
+.series-info {
+  display: flex;
+  gap: 20px;
+}
+
+.series-metadata {
+  flex: 1;
+} 

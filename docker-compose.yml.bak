@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  manga-assistant:
+    build: .
+    ports:
+      - "2828:8080"
+    volumes:
+      - ./manga-library:/manga-library
+    environment:
+      - MANGA_LIBRARY_PATH=/manga-library
+    restart: unless-stopped
+
+  frontend:
+    image: node:18
+    working_dir: /app/frontend
+    volumes:
+      - ./frontend:/app/frontend
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && npm start"
+
+volumes:
+  go-modules: 

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.manga-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.manga-card:hover {
+  transform: scale(1.05);
+} 
